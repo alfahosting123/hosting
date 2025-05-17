@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #ecf0f1; /* Background abu muda */
+    color: #2c3e50; /* Warna teks default */
+}
+
+h2 {
+    text-align: center;
+    color: #34495e; /* Judul tetap biru gelap */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #000000; /* <<--- teks tabel sekarang hitam */
+    font-size: 14px;
+}
+
+th {
+    background-color: #2980b9; /* background header biru */
+    color: #000000; /* tulisan header tetap putih agar kontras */
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* baris genap abu muda */
+}
+
+.dibayar {
+    color: #27ae60; /* Hijau cerah */
+    font-weight: bold;
+}
+
+.belum-dibayar {
+    color: #e74c3c; /* Merah cerah */
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: #2c80b4;
+}
+
+.notif-sukses {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sekolah XYZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>SMK MUHAMMADIYAH LARANGAN</h1>
+      <p>Membangun Generasi Cerdas dan Berakhlak Mulia</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kelas">Kelas</a></li>
+      <li><a href="#kontak">Laporan</a></li>
+    </ul>
+  </nav>
+
+  <section id="tentang" class="container">
+    <h2>Tentang Sekolah</h2>
+    <p>SMK MUHAMMADIYAH LARANGAN (smkmuhlar) merupakan institusi pendidikan modern yang mengedepankan mutu dan karakter. Kami menyediakan fasilitas lengkap, guru profesional, dan kurikulum berbasis teknologi.</p>
+  </section>
+
+  <section id="kelas" class="container">
+    <h2>Daftar Kelas</h2>
+    <ul class="kelas-list">
+      <li><a href="xakt1.html">X AKT 1</a></li>
+      <li><a href="xtkj1.html">X TKJ 1</a></li>
+      <li><a href="tugas/project/index.html">X TKJ 2</a></li>
+      <li><a href="xtkj3.html">X TKJ 3</a></li>
+      <li><a href="xtkj4.html">X TKJ 4</a></li>
+      <li><a href="xto1.html">X TO 1</a></li>
+      <li><a href="xto2.html">X TO 2</a></li>
+      <li><a href="xtsm1.html">X TSM 1</a></li>
+      <li><a href="xiakt1.html">XI AKT 1</a></li>
+      <li><a href="xiakt2.html">XI AKT 2</a></li>
+      <li><a href="xitkj1.html">XI TKJ 1</a></li>
+      <!-- Tambah kelas lain di sini -->
+    </ul>
+  </section>
+
+  <section id="Bayar-SPP" class="container">
+    <h2>Bayar Administrasi Online</h2>
+    <ul class="bayarspp">
+      <li><a href="index.php">Bayar Administrasi</a></li>
+    </ul>
+  </section>
+
+<section id="kontak" class="container">
+  <h2>Laporan atau Pertanyaan</h2>
+  <form id="reportForm" action="php/kirim-laporan.php" method="POST">
+    <input type="text" name="nama" placeholder="Nama" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <textarea name="pesan" placeholder="Pesan atau Laporan..." required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="formResponse"></p>
+</section>
+
+
+  <footer>
+    <p>© 2025 Sekolah XYZ. All rights reserved.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/share/1ALsnn5R4q/" target="_blank" class="facebook" title="Facebook"></a>
+        <a href="https://www.youtube.com" target="_blank" class="youtube" title="YouTube"></a>
+        <a href="https://www.twitter.com" target="_blank" class="twitter" title="Twitter"></a>
+        <a href="https://www.instagram.com/smkmuhlar?igsh=MXV6ZmszbDN0YXI3dg==" target="_blank" class="instagram" title="Instagram"></a>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

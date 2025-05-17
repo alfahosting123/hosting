@@ -1,0 +1,318 @@
+/* Global Styles */
+/* Menambahkan smooth scroll pada seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/sekul.jpg') no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+
+/* Navigation */
+nav {
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Container for Sections */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* About Section */
+#tentang {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#tentang p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+#tentang img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Class List */
+#kelas .kelas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+#kelas .kelas-list li {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#kelas .kelas-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#kelas .kelas-list li a {
+  font-size: 1.1rem;
+  color: #0d47a1;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+#kelas .kelas-list li a:hover {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+#kelas .kelas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+#Bayar-SPP {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Bayar-SPP h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bayarspp {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.bayarspp li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.bayarspp a {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
+
+.bayarspp a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.bayarspp a:active {
+  transform: translateY(2px);
+}
+
+
+/* Contact Form */
+#kontak {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  background: #0d47a1;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1976d2;
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+/* Ikon sosial media */
+.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+.youtube {
+    background-image: url('assets/yt.png');
+}
+
+.twitter {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg');
+}
+
+.instagram {
+    background-image: url('assets/ig.png');
+}
+
+/* Hover effect for each social media */
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.youtube:hover {
+    background-color: #FF0000;
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.instagram:hover {
+    background-color: #C13584;
+}

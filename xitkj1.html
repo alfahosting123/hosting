@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelas XI TKJ 1</title>
+  <link rel="stylesheet" href="../css/style-xitkj1.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="navMenu" class="hidden">
+      <a href="#jadwal-piket">Jadwal Piket</a>
+      <a href="#jadwal-mapel">Jadwal Mapel</a>
+      <a href="#absensi">Absensi</a>
+      <a href="tugas_sekul_xitkj1.html">Tugas</a>
+    </nav>
+  </header>
+
+  <main class="konten-kelas">
+    <section id="jadwal-piket">
+      <h2>Jadwal Piket</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Petugas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Senin</td><td>--</td></tr>
+          <tr><td>Selasa</td><td>--</td></tr>
+          <tr><td>Rabu</td><td>--</td></tr>
+          <tr><td>Kamis</td><td>--</td></tr>
+          <tr><td>Jumat</td><td>--</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="jadwal-mapel">
+      <h2>Jadwal Mapel</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Mata Pelajaran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Senin</td><td>Upacara,ASJ,KJ,Fikih,PKN,Aqidah-Akhlak,Tarikh</td></tr>
+          <tr><td>Selasa</td><td>PKK,MTK,KM,KPJK,BK</td></tr>
+          <tr><td>Rabu</td><td>Fikih,Bahasa Arab,ASJ,PJOK,Alquran-Hadist,Bahasa Inggris,Sejarah Indonesia</td></tr>
+          <tr><td>Kamis</td><td>P5,Desain Grafis,Bahasa Indonesiazl,Bahasa Inggris</td></tr>
+          <tr><td>Jumat</td><td>PKK,Bahasa Jawa,Instalasi Jaringan Kabel Nirkabel</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="struktur-organisasi">
+      <h2>Struktur Organisasi Kelas</h2>
+      <ul>
+        <li>Ketua Kelas: Aziz Maolana</li>
+        <li>Wakil Ketua: Egzz</li>
+        <li>Sekretaris: Fitri Hanifah</li>
+        <li>Bendahara: Puput Ramadhani</li>
+        <li>Seksi Kebersihan: Widi Khaerul Fahri</li>
+        <li>Seksi Keamanan: Yafi & Refan</li>
+        <li>Seksi Dokumentasi:--</li>
+      </ul>
+    </section>
+
+<section id="absensi">
+  <h2>Absensi Siswa</h2>
+  <label>Filter Status:
+  <select id="filterStatus">
+    <option value="Semua">Semua</option>
+    <option value="Hadir">Hadir</option>
+    <option value="Izin">Izin</option>
+    <option value="Sakit">Sakit</option>
+  </select>
+</label>
+
+<div style="margin-bottom: 1rem;">
+  <label for="tanggalAbsensi">Tanggal Absensi:</label>
+  <input type="date" id="tanggalAbsensi" />
+</div>
+
+<div id="rekapAbsensi" style="margin-bottom: 1rem; font-weight: bold;">
+  Hadir: 0 | Izin: 0 | Sakit: 0
+</div>
+
+
+  <table id="absensiTable">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+<tbody>
+  <tr><td>Ahmad Firli Habibie</td><td class="status">Hadir</td></tr>
+  <tr><td>Andhika Dwi Apriyani.S</td><td class="status">Hadir</td></tr>
+  <tr><td>Andi Maulana</td><td class="status">Hadir</td></tr>
+  <tr><td>Annisa Fitri Ramadhani</td><td class="status">Hadir</td></tr>
+  <tr><td>Apriliani Pramestia Darma</td><td class="status">Hadir</td></tr>
+  <tr><td>Atmaja Adinata</td><td class="status">Hadir</td></tr>
+  <tr><td>Cita Septiani</td><td class="status">Hadir</td></tr>
+  <tr><td>Candra Ayu P</td><td class="status">Hadir</td></tr>
+  <tr><td>Desi Indri</td><td class="status">Hadir</td></tr>
+  <tr><td>Dinda Nur Kholifah</td><td class="status">Hadir</td></tr>
+  <tr><td>Ega Prima Saputra</td><td class="status">Hadir</td></tr>
+  <tr><td>Ellatul Hasanah</td><td class="status">Hadir</td></tr>
+  <tr><td>Elsania</td><td class="status">Hadir</td></tr>
+  <tr><td>Feliz Azimah</td><td class="status">Hadir</td></tr>
+  <tr><td>Fitri Hanifah</td><td class="status">Hadir</td></tr>
+  <tr><td>Imam Awwaludin</td><td class="status">Hadir</td></tr>
+  <tr><td>Indah Faizah</td><td class="status">Hadir</td></tr>
+  <tr><td>Indri Yufita Sari</td><td class="status">Hadir</td></tr>
+  <tr><td>Khaerunnisa</td><td class="status">Hadir</td></tr>
+  <tr><td>Mayla Julia Hana</td><td class="status">Hadir</td></tr>
+  <tr><td>Muhammad Aziz Maulana</td><td class="status">Hadir</td></tr>
+  <tr><td>Muhammad Fadilah Apriyanto</td><td class="status">Hadir</td></tr>
+  <tr><td>Mughni Rifqi Hurrahman</td><td class="status">Hadir</td></tr>
+  <tr><td>Rahma Amalia</td><td class="status">Hadir</td></tr>
+  <tr><td>Rini Dian Anggreini</td><td class="status">Hadir</td></tr>
+  <tr><td>Refan Adrian Ike Saputra</td><td class="status">Hadir</td></tr>
+  <tr><td>Sri Ayu</td><td class="status">Hadir</td></tr>
+  <tr><td>Shinta Nur Azizah</td><td class="status">Hadir</td></tr>
+  <tr><td>Tiwi Indah Sari</td><td class="status">Hadir</td></tr>
+  <tr><td>Trisna Levi Triana</td><td class="status">Hadir</td></tr>
+  <tr><td>Triyanto</td><td class="status">Hadir</td></tr>
+  <tr><td>Uswatun Khasanah</td><td class="status">Hadir</td></tr>
+  <tr><td>Widi Khaerul Fahri</td><td class="status">Hadir</td></tr>
+  <tr><td>Wildan Naim</td><td class="status">Hadir</td></tr>
+  <tr><td>Yafi Hibban</td><td class="status">Hadir</td></tr>
+</tbody>
+
+  </table>
+  <p class="note">*Klik status untuk mengubah</p>
+</section>
+  </main>
+
+  <footer class="footer-kelas">
+    <p>&copy; 2025 Kelas X-TKJ 1 | Sekolah XYZ</p>
+  </footer>
+  
+<script>
+const statuses = ["Hadir", "Izin", "Sakit"];
+
+function updateRekap() {
+  const counts = { Hadir: 0, Izin: 0, Sakit: 0 };
+  document.querySelectorAll('.status').forEach(cell => {
+    counts[cell.textContent] = (counts[cell.textContent] || 0) + 1;
+  });
+  document.getElementById('rekapAbsensi').textContent =
+    `Hadir: ${counts.Hadir || 0} | Izin: ${counts.Izin || 0} | Sakit: ${counts.Sakit || 0}`;
+}
+
+document.querySelectorAll('.status').forEach(cell => {
+  cell.addEventListener('click', () => {
+    const current = cell.textContent;
+    const next = statuses[(statuses.indexOf(current) + 1) % statuses.length];
+    const nama = cell.parentElement.children[0].textContent;
+    const tanggal = document.getElementById('tanggalAbsensi').value || new Date().toISOString().split('T')[0];
+
+    cell.textContent = next;
+
+    fetch("../php/simpan_absensi.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nama: nama, status: next, tanggal: tanggal })
+    })
+    .then(res => res.json())
+   .then(data => {
+  console.log(data);
+  if (!data.success) alert("Gagal menyimpan!");
+})
+.catch((err) => {
+  console.error(err);
+  alert("Gagal terhubung ke server.");
+});
+
+    updateRekap();
+  });
+});
+
+document.getElementById('filterStatus').addEventListener('change', function() {
+  const selected = this.value;
+  document.querySelectorAll('#absensiTable tbody tr').forEach(row => {
+    const status = row.querySelector('.status').textContent;
+    row.style.display = (selected === "Semua" || status === selected) ? "" : "none";
+  });
+});
+
+updateRekap();
+
+// Mencegah salin (copy)
+document.addEventListener('copy', function(e) {
+  e.preventDefault();
+  alert("Fitur salin teks dinonaktifkan di situs ini.");
+});
+
+// Mencegah seleksi teks
+document.addEventListener('selectstart', function(e) {
+  e.preventDefault();
+});
+
+// Mencegah salin (copy)
+document.addEventListener('copy', function(e) {
+  e.preventDefault();
+  alert("Fitur salin teks dinonaktifkan di situs ini.");
+});
+
+// Opsional: Mencegah seleksi teks (blok)
+document.addEventListener('selectstart', function(e) {
+  e.preventDefault();
+});
+
+function toggleMenu(el) {
+  el.classList.toggle('active');
+  const nav = document.getElementById('navMenu');
+  nav.classList.toggle('hidden');
+  nav.classList.toggle('show');
+}
+
+</script>
+
+</body>
+</html>

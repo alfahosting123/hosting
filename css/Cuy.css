@@ -1,0 +1,66 @@
+/* Reset dasar untuk tampilan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Link tombol */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Wrapper untuk konten */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Responsiveness untuk mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
